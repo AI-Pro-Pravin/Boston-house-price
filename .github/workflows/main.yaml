@@ -30,8 +30,8 @@ jobs:
           
           # Heroku API key associated with provided user's email.
           # Api Key is available under your Heroku account settings.
-          render-token: ${{ secrets.RENDER_API_KEY }}
+          api-key: ${{ secrets.RENDER_API_KEY }}
           
           # Name of the heroku application to which the build is to be sent.
-          api-key: ${{ secrets.RENDER_SERVICE_ID }}
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
           wait-for-succes: true
