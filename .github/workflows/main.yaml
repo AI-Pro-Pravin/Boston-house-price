@@ -26,11 +26,11 @@ jobs:
           # The email address associated with your Heroku account.
           # If you don't want to use repository secrets (which is recommended) you can do:
           # email: my.email@example.com
-          email: ${{ secrets.RENDER_EMAIL }}
+          #github-token: ${{ secrets.RENDER_EMAIL }}
           
           # Heroku API key associated with provided user's email.
           # Api Key is available under your Heroku account settings.
-          render_api_key: ${{ secrets.RENDER_API_KEY }}
+          render-token: ${{ secrets.RENDER_API_KEY }}
           
           # Name of the heroku application to which the build is to be sent.
-          render_app_name: ${{ secrets.RENDER_APP_NAME }}
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
