@@ -19,7 +19,7 @@ jobs:
 ### ⬇ IMPORTANT PART ⬇ ###
 
       - name: Build, Push and Release a Docker container to Render. # Your custom step name
-        uses: bounceapp/render-action@0.6.0 # GitHub action name (leave it as it is).
+        uses: johnbeynon/render-deploy-action@v0.0.8 # GitHub action name (leave it as it is).
         with:
           # Below you must provide variables for your Heroku app.
 
@@ -33,4 +33,5 @@ jobs:
           render-token: ${{ secrets.RENDER_API_KEY }}
           
           # Name of the heroku application to which the build is to be sent.
-          service-id: ${{ secrets.RENDER_SERVICE_ID }}
+          api-key: ${{ secrets.RENDER_SERVICE_ID }}
+          wait-for-succes: true
